@@ -23,7 +23,7 @@ ol {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: auto 320px;
   grid-template-rows: 25px 3fr 6fr;
   grid-template-areas:
     "header header"
