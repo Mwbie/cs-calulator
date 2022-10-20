@@ -74,6 +74,9 @@ div.result {
   display: inline-flex;
   margin-left: 10px;
 }
+.burger i:hover{
+  background: #ddd;
+  }
 .burger p {
   margin-left: 15px;
 }
@@ -106,12 +109,7 @@ div.result {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.history p:first-child::after {
-  width: 25px;
-  height: 5px;
-  margin: 4px 0;
-  background: rgb(207, 15, 15);
-}
+
 .history p {
   display: inline-flex;
   justify-content: center;
