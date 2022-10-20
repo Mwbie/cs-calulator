@@ -28,7 +28,7 @@ ol {
   grid-template-areas:
     "header header"
     "result history"
-    "button history";
+    "numbers history";
 }
 header {
   grid-area: header;
@@ -115,6 +115,7 @@ div.result {
   justify-content: center;
 }
 .numbers {
+  grid-area: numbers;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
