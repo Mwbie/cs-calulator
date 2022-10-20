@@ -115,7 +115,7 @@ div.result {
   justify-content: center;
 }
 .numbers {
-  grid-area: numbers;
+  /*grid-area: numbers;*/
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
