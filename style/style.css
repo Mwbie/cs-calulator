@@ -4,7 +4,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -23,7 +22,7 @@ ol {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 4fr 320px;
+  grid-template-columns: 4fr 2fr;
   grid-template-rows: 25px 3fr 6fr;
   grid-template-areas:
     "header header"
@@ -78,12 +77,17 @@ div.result {
 .burger p {
   font-weight: bolder;
   margin-left: 15px;
+  letter-spacing: 4px;
+}
+.burger i{
+  cursor: pointer;
 }
 .burger i:hover{
   background: #ddd;
 }
  input {
-  /* padding: 0 10px 15px 10px; */
+  box-sizing: border-box;
+  padding: 30px 10px 15px 10px;
   border: none;
   width: 100%;
   text-align: right;
@@ -99,6 +103,7 @@ div.result {
   font-size: 12px;
   text-align: center;
   padding: 10px 0;
+  cursor: pointer;
 }
 .modes p:hover {
   background: #ddd;
@@ -114,17 +119,21 @@ div.result {
   align-self: flex-end;
 }
 .history {
+  max-width: 320px;
   grid-area: history;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2,100px);
 }
  
-.history p {
+.history h3 {
   display: inline-flex;
   justify-content: center;
+  font-weight: bold;
+  margin-top: 5px;
 }
 .numbers {
+  min-height: 420px;
   grid-area: button;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -137,9 +146,11 @@ div.result {
   align-items: center;
   justify-content: center;
   border: 1px solid #efefef;
+  cursor: pointer;
 }
 .n {
   background-color: #fff;
+  font-weight: bold;
 }
 .numbers p:hover {
   background: #ddd;
