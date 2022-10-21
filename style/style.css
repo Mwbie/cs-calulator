@@ -23,7 +23,7 @@ ol {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: 4fr 320px;
   grid-template-rows: 25px 3fr 6fr;
   grid-template-areas:
     "header header"
@@ -37,9 +37,10 @@ header {
   justify-content: space-between;
   margin-right: 10px;
   margin-left: 10px;
-  background: #fff;
 }
-
+.title p{
+  font-size: 16px;
+}
 header .icons {
   justify-content: space-between;
 }
@@ -75,7 +76,18 @@ div.result {
   margin-left: 10px;
 }
 .burger p {
+  font-weight: bolder;
   margin-left: 15px;
+}
+.burger i:hover{
+  background: #ddd;
+}
+ input {
+  /* padding: 0 10px 15px 10px; */
+  border: none;
+  width: 100%;
+  text-align: right;
+  font-size: 40px;
 }
 .result .modes {
   display: grid;
@@ -105,18 +117,15 @@ div.result {
   grid-area: history;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,100px);
 }
-.history p:first-child::after {
-  width: 25px;
-  height: 5px;
-  margin: 4px 0;
-  background: rgb(207, 15, 15);
-}
+ 
 .history p {
   display: inline-flex;
   justify-content: center;
 }
 .numbers {
+  grid-area: button;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -134,7 +143,4 @@ div.result {
 }
 .numbers p:hover {
   background: #ddd;
-}
-.n:hover {
-  background: rgb(124, 61, 61);
 }
