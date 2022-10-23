@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
+
 a {
   text-decoration: none;
 }
@@ -21,7 +22,7 @@ ol {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: 2fr 320px;
   grid-template-rows: 25px 3fr 6fr;
   grid-template-areas:
     "header header"
@@ -47,11 +48,13 @@ header .icons {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 24px;
+  width: 38px;
   height: 24px;
   border-radius: 4px;
-  margin-right: 15px;
   cursor: pointer;
+}
+.icons i:last-child{
+  margin-right: 5px;
 }
 .close:hover {
   background: rgb(206, 89, 89);
@@ -76,29 +79,29 @@ div.result {
 .burger p {
   font-weight: bolder;
   margin-left: 15px;
-  letter-spacing: 4px;
 }
 .burger i{
+  display: flex;
+  justify-content: center;
+  width: 32px;
   cursor: pointer;
 }
 .burger i:hover{
   background: #ddd;
 }
- input {
-  box-sizing: border-box;
-  padding: 30px 10px 15px 10px;
-  border: none;
-  width: 100%;
-  text-align: right;
-  font-size: 40px;
+.result .zero{
+  justify-content: flex-end;
+ font-size: 54px;
+ font-weight: bold;
 }
 .result .modes {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(1, 1fr);
+  display: flex;
+  max-width: 200px;
+  justify-content: space-between;
   align-items: center;
 }
 .modes p {
+  width: 24px;
   font-size: 12px;
   text-align: center;
   padding: 10px 0;
@@ -118,21 +121,24 @@ div.result {
   align-self: flex-end;
 }
 .history {
-  max-width: 320px;
   grid-area: history;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2,100px);
+  margin-left: 5px;
+}
+.history p{
+  margin-top: 25px;
 }
  
 .history h3 {
-  display: inline-flex;
-  justify-content: center;
+ display: inline;
+ margin-right: 20px;
   font-weight: bold;
   margin-top: 5px;
 }
+.history h3:first-child{
+  border-bottom: 3px solid orange;
+}
 .numbers {
-  min-height: 420px;
+ 
   grid-area: button;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -144,8 +150,9 @@ div.result {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #efefef;
+  gap: 1px;
   cursor: pointer;
+border: 1px solid #e0e0e0;
 }
 .n {
   background-color: #fff;
