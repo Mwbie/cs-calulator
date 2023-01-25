@@ -86,6 +86,7 @@ div.result {
   justify-content: center;
   width: 32px;
   cursor: pointer;
+  align-self: center;
 }
 .burger i:hover{
   background: #ddd;
