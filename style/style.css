@@ -165,6 +165,9 @@ div.result {
   font-weight: bold;
   background-color: rgb(236, 234, 234);
 }
+.sign i {
+  background-color: inherit;
+}
 .numbers p:hover {
   background: #ddd;
 }
