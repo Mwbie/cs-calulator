@@ -100,7 +100,7 @@ div.result {
 }
 .result .modes {
   display: flex;
-  max-width: 340px;
+  max-width: 380px;
   justify-content: space-between;
   align-items: center;
 }
@@ -114,6 +114,10 @@ div.result {
 .modes p.active:hover {
   background: #ddd;
 }
+.modes p.active {
+ font-size: 0.9rem;
+ font-weight: 500;
+}
 .modes p.de-active {
   color: #999;
   cursor: default;
@@ -124,13 +128,17 @@ div.result {
 
 .result .zero {
   align-self: flex-end;
+  padding-right: 1.3rem;
 }
 .history {
   grid-area: history;
   margin-left: 5px;
+  padding-top: 0.2rem;
 }
 .history p {
-  margin-top: 25px;
+  margin-top: 2.3rem;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .history h4 {
@@ -140,7 +148,8 @@ div.result {
   margin-top: 5px;
   cursor: pointer;
 }
-.history h4:first-child {
+.history h4:first-child{
+  padding-bottom: 0.2rem;
   border-bottom: 2px solid orange;
 }
 .numbers {
@@ -159,13 +168,14 @@ div.result {
 }
 .number {
   background-color: #fff;
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 1.5rem;
 }
 .sign {
-  font-weight: bold;
+  font-size: 1.2rem;
   background-color: rgb(236, 234, 234);
 }
-.sign i {
+.sign i , img {
   background-color: inherit;
 }
 .numbers p:hover {
