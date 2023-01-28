@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: lightgray;
 }
 
 .container {
@@ -50,7 +51,7 @@ header .icons {
 }
 .mini:hover,
 .max:hover {
-  background: #ddd;
+  background: rgb(195, 191, 191);
   color: #fff;
 }
 div.result {
@@ -90,7 +91,7 @@ div.result {
   display: none;
 }
 .burger img:hover {
-  background: #ddd;
+  background: rgb(195, 191, 191);
 }
 .result .zero {
   justify-content: flex-end;
@@ -108,12 +109,14 @@ div.result {
   text-align: center;
   padding: 10px 0;
   cursor: pointer;
+  width: 25%;
 }
-.modes p:hover {
+.modes p.active:hover {
   background: #ddd;
 }
 .modes p.de-active {
   color: #999;
+  cursor: default;
 }
 .modes i {
   font-size: 0.5rem;
@@ -130,24 +133,23 @@ div.result {
   margin-top: 25px;
 }
 
-.history h3 {
+.history h4 {
   display: inline;
   margin-right: 20px;
   font-weight: bold;
   margin-top: 5px;
   cursor: pointer;
 }
-.history h3:first-child {
-  border-bottom: 3px solid orange;
+.history h4:first-child {
+  border-bottom: 2px solid orange;
 }
 .numbers {
   grid-area: button;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  background: #f1f1f1;
   text-align: center;
-  gap: 3px;
+  gap: 2px;
 }
 .numbers p {
   display: flex;
@@ -161,9 +163,14 @@ div.result {
 }
 .sign {
   font-weight: bold;
+  background-color: rgb(236, 234, 234);
 }
 .numbers p:hover {
   background: #ddd;
+}
+sup ,
+sub{
+  background-color: inherit;
 }
 /* this section is for step 2 */
 /* @media  only screen and (max-width : 769px ) {
