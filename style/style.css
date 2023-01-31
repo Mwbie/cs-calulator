@@ -93,7 +93,8 @@ div.result {
   align-self: center;
 }
 .right-side img {
-  display: none;
+  display: flex;
+  margin-right: 1rem;
 }
 .burger img:hover {
   background: rgb(195, 191, 191);
