@@ -74,6 +74,11 @@ div.result {
   display: flex;
   align-items: baseline;
 }
+.burger .left-side p + img {
+  width: 24px;
+  height: 20px;
+  margin-left: 1rem;
+}
 .left-side img {
   display: flex;
   justify-content: center;
@@ -129,6 +134,7 @@ div.result {
 .result .zero {
   align-self: flex-end;
   padding-right: 1.3rem;
+  padding-bottom: 1.1rem;
 }
 .history {
   grid-area: history;
