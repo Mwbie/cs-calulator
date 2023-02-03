@@ -121,21 +121,22 @@ div.result {
   justify-content: space-between;
   align-items: center;
 }
-.modes p {
+.modes button {
   font-size: 0.75rem;
   text-align: center;
   padding: 0.62rem 0;
   cursor: pointer;
   width: 25%;
+  border: none;
 }
-.modes p.active:hover {
+.modes button.active:hover {
   background: #ddd;
 }
-.modes p.active {
+.modes button.active {
   font-size: 0.9rem;
   font-weight: 500;
 }
-.modes p.de-active {
+.modes button.de-active {
   color: #999;
   cursor: default;
 }
